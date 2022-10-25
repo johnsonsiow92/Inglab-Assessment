@@ -7,13 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2093711029058E000005B65C /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093710F29058E000005B65C /* UserListView.swift */; };
+		2096024A2907D66A00D78909 /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209602492907D66A00D78909 /* LoginUser.swift */; };
+		2096024C2907DD0000D78909 /* AlertToast in Resources */ = {isa = PBXBuildFile; fileRef = 2096024B2907DD0000D78909 /* AlertToast */; };
+		2096024E2907DF7500D78909 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 2096024D2907DF7500D78909 /* AlertToast */; };
+		2097317F2906D61300857440 /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097317E2906D61300857440 /* UserItem.swift */; };
+		209731812906D72D00857440 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209731802906D72D00857440 /* UserListViewModel.swift */; };
+		2097318F2906E89C00857440 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209731832906DE5200857440 /* Alamofire.xcframework */; };
+		209731902906E89C00857440 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 209731832906DE5200857440 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		209731932906ECE000857440 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209731922906ECE000857440 /* APIService.swift */; };
+		209731952907098D00857440 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209731942907098D00857440 /* UserDetailsView.swift */; };
 		2099C1922902754C00EFD556 /* Inglab_AssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099C1912902754C00EFD556 /* Inglab_AssessmentApp.swift */; };
 		2099C1942902754C00EFD556 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099C1932902754C00EFD556 /* ContentView.swift */; };
 		2099C1962902754E00EFD556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2099C1952902754E00EFD556 /* Assets.xcassets */; };
 		2099C1992902754E00EFD556 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2099C1982902754E00EFD556 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		209731912906E89C00857440 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				209731902906E89C00857440 /* Alamofire.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2093710F29058E000005B65C /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		209602492907D66A00D78909 /* LoginUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
+		2096024B2907DD0000D78909 /* AlertToast */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AlertToast; path = "Inglab Assessment/AlertToast"; sourceTree = "<group>"; };
+		2097317E2906D61300857440 /* UserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
+		209731802906D72D00857440 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		209731832906DE5200857440 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
+		209731922906ECE000857440 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		209731942907098D00857440 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		2099C18E2902754C00EFD556 /* Inglab Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inglab Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2099C1912902754C00EFD556 /* Inglab_AssessmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inglab_AssessmentApp.swift; sourceTree = "<group>"; };
 		2099C1932902754C00EFD556 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +58,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2097318F2906E89C00857440 /* Alamofire.xcframework in Frameworks */,
+				2096024E2907DF7500D78909 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		209731822906DE5200857440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				209731832906DE5200857440 /* Alamofire.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2099C1852902754C00EFD556 = {
 			isa = PBXGroup;
 			children = (
+				2096024B2907DD0000D78909 /* AlertToast */,
 				2099C1902902754C00EFD556 /* Inglab Assessment */,
 				2099C18F2902754C00EFD556 /* Products */,
+				209731822906DE5200857440 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +99,12 @@
 				2099C1932902754C00EFD556 /* ContentView.swift */,
 				2099C1952902754E00EFD556 /* Assets.xcassets */,
 				2099C1972902754E00EFD556 /* Preview Content */,
+				209731942907098D00857440 /* UserDetailsView.swift */,
+				2093710F29058E000005B65C /* UserListView.swift */,
+				2097317E2906D61300857440 /* UserItem.swift */,
+				209731802906D72D00857440 /* UserListViewModel.swift */,
+				209731922906ECE000857440 /* APIService.swift */,
+				209602492907D66A00D78909 /* LoginUser.swift */,
 			);
 			path = "Inglab Assessment";
 			sourceTree = "<group>";
@@ -77,12 +127,16 @@
 				2099C18A2902754C00EFD556 /* Sources */,
 				2099C18B2902754C00EFD556 /* Frameworks */,
 				2099C18C2902754C00EFD556 /* Resources */,
+				209731912906E89C00857440 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Inglab Assessment";
+			packageProductDependencies = (
+				2096024D2907DF7500D78909 /* AlertToast */,
+			);
 			productName = "Inglab Assessment";
 			productReference = 2099C18E2902754C00EFD556 /* Inglab Assessment.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2096024C2907DD0000D78909 /* AlertToast in Resources */,
 				2099C1992902754E00EFD556 /* Preview Assets.xcassets in Resources */,
 				2099C1962902754E00EFD556 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209731952907098D00857440 /* UserDetailsView.swift in Sources */,
 				2099C1942902754C00EFD556 /* ContentView.swift in Sources */,
+				2096024A2907D66A00D78909 /* LoginUser.swift in Sources */,
+				2093711029058E000005B65C /* UserListView.swift in Sources */,
 				2099C1922902754C00EFD556 /* Inglab_AssessmentApp.swift in Sources */,
+				2097317F2906D61300857440 /* UserItem.swift in Sources */,
+				209731932906ECE000857440 /* APIService.swift in Sources */,
+				209731812906D72D00857440 /* UserListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +263,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -267,13 +329,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Inglab Assessment/Preview Content\"";
+				DEVELOPMENT_TEAM = NT7H64QYUJ;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,13 +360,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Inglab Assessment/Preview Content\"";
+				DEVELOPMENT_TEAM = NT7H64QYUJ;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +405,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2096024D2907DF7500D78909 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2099C1862902754C00EFD556 /* Project object */;
 }
